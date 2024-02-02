@@ -8,6 +8,97 @@ public class Program
 
     static void Main(string[] args)
     {
+        
+    }
+
+    static void Main10(string[] args)
+    {
+        //INITIALIZING OR CREATING ARRAY WITH USER INPUT
+
+
+        Console.WriteLine("enter the length of array");
+        int num = int.Parse(Console.ReadLine());
+
+        int[] numbers = new int[num];
+
+        for (int i = 0; i < num; i++)
+        {
+            Console.WriteLine("enter your data on location " + i);
+            int data = int.Parse(Console.ReadLine());
+            numbers[i] = data;
+        }
+
+
+        foreach (int nums in numbers)
+        {
+            Console.WriteLine(nums);
+        }
+
+    }
+    static void Main88(string[] args)
+    {
+        //ACCESSING ARRAY USING FOREACH LOOP
+
+        int[] numbers = new int[4];
+        numbers[0] = 11;
+        numbers[1] = 22;
+        numbers[2] = 33;
+        numbers[3] = 44;
+
+        //using for loop
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            // Console.WriteLine(numbers[i]);
+
+        }
+
+        // using foreach 
+        foreach (int num in numbers)
+        {
+            Console.WriteLine(num);
+        }
+
+    }
+    static void MainN(string[] args)
+    {
+        //string[] arr = new string[6];
+        //string[] arr = new string[] {"virat","rohit","hardik","ms" };
+        string[] arr = ["virat", "rohit", "hardik", "ms"];
+        string[] arr1 = { "virat", "rohit", "hardik", "ms" };
+        Console.WriteLine(arr[0]);
+        Console.WriteLine(arr1[0]);
+    }
+    static void Main9(string[] args)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 5)
+            {
+                Console.WriteLine(i);
+                goto stop;
+
+
+            }
+
+        }
+    stop:
+        Console.WriteLine("hello bcz of stop");
+    }
+    static void Main8(string[] args)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (i % 2 == 0)
+            {
+                continue;
+
+            }
+            Console.WriteLine(i);
+        }
+    }
+
+    static void Main99(string[] args)
+    {
         //value type and referance type 
         int x = 5;
         int y = x;
